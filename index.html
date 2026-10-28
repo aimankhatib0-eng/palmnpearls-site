@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>PNP Motors · Hand-picked. Verified. Fine cars.</title>
+<meta name="description" content="PNP Motors, the fine-car house of Palm & Pearls. Hand-picked, verified, very premium pre-owned cars between Dubai and India.">
+<meta name="theme-color" content="#2A331F">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://palmnpearls.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PNP Motors">
+<meta property="og:title" content="PNP Motors · Hand-picked. Verified. Fine cars.">
+<meta property="og:description" content="The fine-car house of Palm &amp; Pearls. Very premium pre-owned cars between Dubai and India. Private viewings by appointment.">
+<meta property="og:url" content="https://palmnpearls.com/">
+<meta property="og:image" content="https://palmnpearls.com/assets/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoDealer","name":"PNP Motors","alternateName":"Palm & Pearls Motors","url":"https://palmnpearls.com/","logo":"https://palmnpearls.com/assets/favicon.svg","slogan":"Hand-picked. Verified. Fine cars.","areaServed":["Dubai","United Arab Emirates","Mumbai","Navi Mumbai","India"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+/* Layout: olive stage (fixed WebGL tunnel + pearl) seen through transparent olive bands; opaque ivory reading bands slide over it. Brand book, Edition 01. */
+:root{
+  --olive:#343F27; --deep:#2A331F; --grove:#45522F; --sage:#6B7A48;
+  --ivory:#F5F0E3; --paper:#E9E2CF;
+  --gold:#B8923A; --gold-hi:#D4B46A; --gold-lo:#7E5E20; --champagne:#F0DA98;
+  --ivory-2:rgba(245,240,227,.74); --ivory-3:rgba(245,240,227,.5);
+  --ink:#343F27; --ink-2:rgba(52,63,39,.78);
+  --hair-on-olive:rgba(212,180,106,.38); --hair-on-ivory:rgba(126,94,32,.42);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Jost','Century Gothic',Futura,'Avenir Next',sans-serif;
+  --ease:cubic-bezier(.45,0,.15,1);
+  --gut-l:max(clamp(20px,5vw,72px),env(safe-area-inset-left,0px));
+  --gut-r:max(clamp(20px,5vw,72px),env(safe-area-inset-right,0px));
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:radial-gradient(120% 90% at 70% 30%,#3a4630 0%,var(--olive) 45%,var(--deep) 100%) fixed,var(--deep);color:var(--ivory);font-family:var(--sans);font-size:16px;line-height:1.65;font-weight:400;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--deep)}
+::selection{background:var(--gold-hi);color:var(--deep)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;text-wrap:balance;letter-spacing:-.005em}
+p{margin:0}
+.wrap{max-width:1320px;margin-inline:auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+.label{font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.32em;text-transform:uppercase;line-height:1.5}
+.on-olive .label{color:var(--gold-hi)}
+.on-ivory .label{color:var(--gold-lo)}
+:focus-visible{outline:1px solid var(--gold-hi);outline-offset:4px}
+
+/* Stage */
+#stage{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;pointer-events:none}
+main,footer,.nav{position:relative;z-index:2}
+.band{position:relative}
+.on-ivory{background:var(--ivory);color:var(--ink)}
+.on-olive{color:var(--ivory)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:50px;padding:0 28px;border:1px solid var(--gold-hi);background:transparent;color:var(--gold-hi);font:500 12px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;text-decoration:none;cursor:pointer;position:relative;overflow:hidden;transition:color .6s var(--ease);border-radius:0}
+.btn::before{content:"";position:absolute;inset:0;background:var(--gold-hi);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease);z-index:-1}
+.btn{isolation:isolate}
+.btn:hover{color:var(--deep)}
+.btn:hover::before{transform:scaleX(1)}
+.on-ivory .btn{border-color:var(--ink);color:var(--ink)}
+.on-ivory .btn::before{background:var(--ink)}
+.on-ivory .btn:hover{color:var(--ivory)}
+.link{font:500 12px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;text-decoration:none;color:var(--ivory);display:inline-flex;gap:12px;align-items:center;padding-block:10px;background:linear-gradient(var(--gold-hi),var(--gold-hi)) left bottom/0 1px no-repeat;transition:background-size .7s var(--ease)}
+.link:hover{background-size:100% 1px}
+.link span{transition:transform .6s var(--ease)}
+.link:hover span{transform:translateX(6px)}
+
+/* Logo */
+.mark{display:block;--mk:url(#gGold);--mks:url(#gGoldS);--mkp:url(#gPearl)}
+.mark.ink{--mk:var(--ink);--mks:var(--ink);--mkp:var(--ink)}
+.wm{font-family:var(--sans);letter-spacing:.34em;text-transform:uppercase;line-height:1;white-space:nowrap}
+.wm b{font-weight:500}
+.wm span{font-weight:400}
+.gold-text{background:linear-gradient(100deg,#B8923A 0%,#E4C886 38%,#C9A452 62%,#D4B46A 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lockup{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.lockup .mark{width:22px;height:39px;flex:none}
+.lockup .wm{font-size:15px}
+.lockup .desc{display:block;margin-top:7px;padding-top:6px;border-top:1px solid var(--hair-on-olive);font:400 7.5px/1 var(--sans);letter-spacing:.42em;color:var(--gold-hi);text-transform:uppercase;white-space:nowrap}
+
+/* Intro (the 3-second logo reveal from the brand book) */
+.intro{position:fixed;inset:0;z-index:100;background:var(--deep);display:grid;place-items:center;cursor:pointer;transition:opacity .8s var(--ease),visibility .8s}
+.intro.out{opacity:0;visibility:hidden}
+.intro-inner{display:grid;justify-items:center;gap:30px}
+.intro svg{width:clamp(84px,11vw,124px);height:auto;overflow:visible}
+.intro .i-line{stroke-dasharray:1;stroke-dashoffset:1}
+.intro .i-outer{animation:draw .9s var(--ease) .8s forwards}
+.intro .i-inner{animation:draw .7s var(--ease) 1.6s forwards}
+.intro .i-stem{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(0);animation:rise .7s var(--ease) 1.6s forwards}
+.intro .i-pearl{opacity:0;animation:fade .6s var(--ease) 2.05s forwards}
+.intro .i-glint{opacity:0;transform-box:fill-box;transform-origin:center;animation:glint 1.1s var(--ease) 2.25s forwards}
+.intro .i-name{opacity:0;transform:translateY(8px);animation:up .8s var(--ease) 3s forwards;text-align:center}
+.intro .i-name .wm{font-size:clamp(20px,2.6vw,28px)}
+.intro .i-name .desc{display:block;margin:14px auto 0;padding-top:12px;border-top:1px solid var(--hair-on-olive);width:max-content;font-size:9px;letter-spacing:.5em;color:var(--gold-hi)}
+.intro .skip{position:absolute;bottom:calc(28px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);color:var(--ivory-3);font-size:10px}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes rise{to{transform:scaleY(1)}}
+@keyframes fade{to{opacity:1}}
+@keyframes up{to{opacity:1;transform:none}}
+@keyframes glint{0%{opacity:0;transform:scale(.4)}35%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.4)}}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background-color .6s var(--ease),border-color .6s var(--ease)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px;transition:height .6s var(--ease)}
+.nav.solid{background:rgba(42,51,31,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,180,106,.18)}
+.nav.solid .wrap{height:68px}
+.nav ul{display:flex;gap:clamp(20px,3vw,44px);list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font:500 11px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--ivory-2);padding-block:8px;transition:color .5s var(--ease)}
+.nav ul a:hover,.nav ul a.cur{color:var(--gold-hi)}
+.nav .btn{min-height:42px;padding:0 20px;font-size:11px}
+.menu-btn{display:none;background:none;border:0;color:var(--ivory);font:500 11px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;padding:12px 0;cursor:pointer}
+.menu-btn i{display:inline-block;width:22px;height:7px;border-block:1px solid var(--gold-hi);margin-left:12px;vertical-align:middle}
+.sheet{position:fixed;inset:0;z-index:49;background:var(--deep);padding:calc(110px + env(safe-area-inset-top,0px)) var(--gut-r) 40px var(--gut-l);display:flex;flex-direction:column;gap:8px;opacity:0;visibility:hidden;transition:opacity .6s var(--ease),visibility .6s}
+.sheet.open{opacity:1;visibility:visible}
+.sheet a{font:600 clamp(36px,10vw,52px)/1.2 var(--serif);text-decoration:none;color:var(--ivory);border-bottom:1px solid var(--hair-on-olive);padding-block:14px}
+.sheet .label{margin-top:auto;color:var(--gold-hi)}
+
+/* Hero */
+.hero{min-height:min(100svh,940px);display:flex;flex-direction:column;justify-content:flex-end;padding-top:120px}
+.hero .wrap{width:100%}
+.hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:end;padding-bottom:clamp(40px,7vh,80px)}
+.hero h1{font-size:clamp(56px,8.6vw,132px);line-height:.94;letter-spacing:-.015em;margin-top:26px}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:block}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--gold-hi)}
+html.js:not(.ready) .hero h1 .ln>span{transform:translateY(108%)}
+.hero h1 .ln>span{transition:transform 1.1s var(--ease)}
+.hero h1 .ln:nth-child(2)>span{transition-delay:.12s}
+.hero h1 .ln:nth-child(3)>span{transition-delay:.24s}
+.hero .lede{max-width:46ch;font-size:clamp(16px,1.25vw,18px);color:var(--ivory-2);margin-top:30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:18px 32px;align-items:center;margin-top:40px}
+.fade-in{transition:opacity .9s var(--ease) .5s,transform .9s var(--ease) .5s}
+html.js:not(.ready) .fade-in{opacity:0;transform:translateY(14px)}
+.hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;border-top:1px solid var(--hair-on-olive)}
+.hero-meta>div{padding:20px 20px 24px 0;font-size:13px;color:var(--ivory-2);line-height:1.5}
+.hero-meta>div b{display:block;font:500 11px/1.4 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--gold-hi);margin-bottom:6px}
+.scroll-cue{display:flex;align-items:center;gap:14px;justify-self:end;color:var(--ivory-3)!important;text-decoration:none}
+.scroll-cue i{position:relative;width:1px;height:46px;background:var(--hair-on-olive);overflow:visible}
+.scroll-cue i::after{content:"";position:absolute;left:-3px;top:0;width:7px;height:7px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff6d8,var(--gold-hi) 60%,var(--gold-lo));animation:cue 2.8s var(--ease) infinite}
+@keyframes cue{0%{transform:translateY(0);opacity:0}20%{opacity:1}80%{opacity:1}100%{transform:translateY(40px);opacity:0}}
+
+/* Section scaffolding */
+.sec{padding-block:clamp(96px,13vw,180px)}
+.sec-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;align-items:end;margin-bottom:clamp(56px,7vw,96px)}
+.h2{font-size:clamp(40px,5.4vw,80px);line-height:1.02}
+.on-ivory .h2{color:var(--ink)}
+.kicker{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.kicker::before{content:"";width:36px;height:1px;background:currentColor;opacity:.7}
+.prose{max-width:58ch;font-size:17px}
+.on-ivory .prose{color:var(--ink-2)}
+.on-olive .prose{color:var(--ivory-2)}
+.rule{height:1px;background:var(--hair-on-ivory);transform-origin:left}
+.on-olive .rule{background:var(--hair-on-olive)}
+
+/* Reveal */
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+html.js .rule.rv{opacity:1;transform:scaleX(0);transition:transform 1.4s var(--ease)}
+html.js .rule.rv.in{transform:scaleX(1)}
+.d1{transition-delay:.1s!important}.d2{transition-delay:.2s!important}.d3{transition-delay:.3s!important}
+
+/* House */
+.house-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3vw,48px)}
+.house-cols>div{min-width:0}
+.house-cols .rule{margin-bottom:22px}
+.house-cols p{color:var(--ink-2);margin-top:12px;font-size:15.5px}
+.positioning{margin-top:clamp(72px,9vw,128px);display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:40px;align-items:start}
+.positioning blockquote{margin:0;font:500 clamp(26px,3vw,42px)/1.25 var(--serif);color:var(--ink);text-wrap:pretty}
+.positioning blockquote em{color:var(--gold-lo)}
+
+/* Standard */
+.std{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.std-intro{position:sticky;top:120px}
+.std-intro .prose{margin-top:28px}
+.pearl-div{display:flex;align-items:center;gap:14px;margin-top:40px;max-width:260px}
+.pearl-div i{flex:1;height:1px;background:var(--hair-on-olive)}
+.pearl-div b{width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff6d8,var(--gold-hi) 55%,var(--gold-lo))}
+.std-list{list-style:none;margin:0;padding:0}
+.std-row{display:grid;grid-template-columns:44px minmax(0,1fr);gap:24px;padding-block:clamp(30px,4vw,48px);border-top:1px solid var(--hair-on-olive);transition:opacity .7s var(--ease)}
+.std-row:last-child{border-bottom:1px solid var(--hair-on-olive)}
+.std-row svg{width:30px;height:30px;stroke:var(--gold-hi);stroke-width:1.25;fill:none;stroke-linejoin:miter;stroke-linecap:square;margin-top:10px}
+.std-row h3{font-size:clamp(32px,3.6vw,52px);line-height:1.05;color:var(--ivory);transition:color .7s var(--ease)}
+.std-row p{color:var(--ivory-2);margin-top:12px;max-width:44ch}
+.std-row .label{margin-top:16px;display:block;font-size:10.5px;color:var(--ivory-3)!important}
+html.js .std-list.live .std-row{opacity:.42}
+html.js .std-list.live .std-row.on{opacity:1}
+.std-row.on h3{color:var(--gold-hi)}
+
+/* Collection */
+.filters{display:flex;gap:28px;flex-wrap:wrap;align-items:center}
+.chip{background:none;border:0;padding:8px 0;font:500 11.5px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--ink-2);cursor:pointer;background:linear-gradient(var(--gold-lo),var(--gold-lo)) left bottom/0 1px no-repeat;transition:background-size .6s var(--ease),color .5s}
+.chip[aria-pressed="true"]{color:var(--gold-lo);background-size:100% 1px}
+.chip:hover{color:var(--ink)}
+.grid-cars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,3.5vw,56px) clamp(24px,3vw,44px)}
+.card{display:flex;flex-direction:column;min-width:0;color:var(--ink);text-decoration:none;cursor:pointer;background:none;border:0;padding:0;text-align:left;font:inherit}
+.card[hidden]{display:none!important}
+.shot{position:relative;aspect-ratio:16/10;max-width:100%;overflow:hidden;background:radial-gradient(80% 90% at 55% 35%,#4a5838 0%,var(--olive) 55%,var(--deep) 100%);clip-path:polygon(0 0,calc(100% - 46px) 0,100% 46px,100% 100%,0 100%)}
+.shot::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(240,218,152,.12) 48%,transparent 62%);transform:translateX(-100%);transition:transform 1.6s var(--ease)}
+.card:hover .shot::after,.card:focus-visible .shot::after{transform:translateX(100%)}
+.shot .floor{position:absolute;left:8%;right:8%;bottom:20%;height:1px;background:linear-gradient(90deg,transparent,rgba(212,180,106,.45),transparent)}
+.car-art{position:absolute;left:50%;bottom:20%;width:68%;transform:translateX(-50%)}
+.card:hover .car-art{transform:translateX(-50%) scale(1.035)}
+.car-art{fill:none;stroke:var(--gold-hi);stroke-width:1;stroke-dasharray:1;stroke-dashoffset:0;transition:transform 1.2s var(--ease),stroke-dashoffset 2.2s var(--ease) .2s}
+html.js .card.rv:not(.in) .car-art{stroke-dashoffset:1}
+.shot .tag{position:absolute;left:18px;top:16px;display:flex;align-items:center;gap:9px;font:500 10px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--gold-hi)}
+.shot .tag i{width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff6d8,var(--gold-hi) 55%,var(--gold-lo))}
+.shot .note{position:absolute;right:18px;bottom:14px;font:400 10px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ivory-3)}
+.mono-wm{position:absolute;right:20px;top:58px;width:14px;height:25px;opacity:.14}
+.card-body{padding-top:24px;display:grid;gap:8px}
+.card-body h3{font-size:clamp(26px,2.4vw,34px);line-height:1.1;font-weight:600}
+.card-body .facts{font-size:14px;color:var(--ink-2)}
+.card-foot{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;border-top:1px solid var(--hair-on-ivory);padding-top:16px;margin-top:10px}
+.card-foot .price{font:600 clamp(22px,2vw,28px)/1 var(--serif);color:var(--gold-lo)}
+.card-foot .label{font-size:10.5px;color:var(--ink)!important;display:inline-flex;gap:10px}
+.card-foot .label span{transition:transform .6s var(--ease)}
+.card:hover .card-foot .label span{transform:translateX(5px)}
+.statement{display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-width:0;background:var(--paper);padding:clamp(28px,3.5vw,48px)}
+.statement h3{font-size:clamp(30px,3vw,44px);line-height:1.1;color:var(--ink)}
+.statement p{color:var(--ink-2);max-width:40ch;margin-top:18px}
+.honesty{margin-top:clamp(48px,6vw,72px);font-size:13px;color:var(--ink-2);max-width:72ch}
+
+/* Report dialog */
+dialog.report{width:min(560px,calc(100vw - 32px));max-height:calc(100svh - 48px);padding:0;border:1px solid var(--hair-on-ivory);background:var(--ivory);color:var(--ink);border-radius:0;overflow:auto}
+dialog.report::backdrop{background:rgba(30,37,22,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+dialog.report[open]{animation:dlg .6s var(--ease)}
+@keyframes dlg{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.rep{padding:clamp(24px,5vw,44px)}
+.rep-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding-bottom:22px;border-bottom:1px solid var(--hair-on-ivory)}
+.rep-top .lockup .wm{color:var(--ink)}
+.rep-top .lockup .desc{color:var(--gold-lo);border-color:var(--hair-on-ivory)}
+.x{background:none;border:0;color:var(--ink);cursor:pointer;font:500 11px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;padding:8px 0}
+.rep h3{font-size:clamp(28px,4vw,36px);line-height:1.1;margin-top:10px}
+.rep .label{display:block;margin-top:24px}
+.rep dl{margin:22px 0 0;display:grid}
+.rep dl>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:16px;padding-block:11px;border-bottom:1px solid var(--hair-on-ivory);font-size:14px}
+.rep dt{color:var(--ink-2)}
+.rep dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
+.rep .sig{margin-top:18px;font:500 10px/1.6 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--ink-2)}
+.rep .btn{margin-top:30px;width:100%}
+
+/* Buying */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,2.6vw,40px)}
+.step{min-width:0}
+.step .n{font:500 clamp(40px,4vw,60px)/1 var(--serif);color:var(--gold-hi);display:block;margin-block:22px 18px}
+.step h3{font-size:clamp(24px,2.1vw,30px);line-height:1.15}
+.step p{color:var(--ivory-2);margin-top:12px;font-size:15px}
+.afar{margin-top:clamp(64px,8vw,112px);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;align-items:start;border-top:1px solid var(--hair-on-olive);padding-top:40px}
+.afar h3{font-size:clamp(28px,2.8vw,40px);line-height:1.1}
+
+/* Values */
+.values{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,2.6vw,40px);margin-top:clamp(64px,8vw,104px)}
+.values>div{min-width:0}
+.values h3{font-size:clamp(26px,2.4vw,34px);margin-top:20px;color:var(--ink)}
+.values p{color:var(--ink-2);margin-top:10px;font-size:15px}
+.purpose{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px)}
+.purpose p.q{font:500 clamp(28px,3.2vw,46px)/1.2 var(--serif);color:var(--ink);margin-top:16px;text-wrap:pretty}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px}
+form.view{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 32px;margin-top:56px}
+.f{display:grid;gap:8px;min-width:0}
+.f.full{grid-column:1/-1}
+.f label{font:500 10.5px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--gold-hi)}
+.f input,.f select,.f textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--hair-on-olive);color:var(--ivory);font:400 17px/1.4 var(--sans);padding:10px 0 12px;border-radius:0;transition:border-color .5s var(--ease);-webkit-appearance:none;appearance:none}
+.f select{background:linear-gradient(45deg,transparent 50%,var(--gold-hi) 50%) right 6px center/6px 6px no-repeat}
+.f option{background:var(--deep);color:var(--ivory)}
+.f textarea{resize:vertical;min-height:84px}
+.f input::placeholder,.f textarea::placeholder{color:var(--ivory-3)}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-bottom-color:var(--gold-hi)}
+.f .err{font-size:12px;color:var(--champagne);min-height:0}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px;margin-top:10px}
+.form-foot p{font-size:13px;color:var(--ivory-3);max-width:44ch}
+.done{margin-top:56px;border-top:1px solid var(--hair-on-olive);padding-top:36px}
+.done h3{font-size:clamp(30px,3vw,42px)}
+.done pre{white-space:pre-wrap;font:400 15px/1.7 var(--sans);color:var(--ivory-2);background:rgba(42,51,31,.6);border-left:1px solid var(--gold-hi);padding:20px 24px;margin:24px 0 30px}
+.done .row{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center}
+.houses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,3vw,48px);margin-top:clamp(80px,10vw,140px)}
+.house{border-top:1px solid var(--hair-on-olive);padding-top:26px;min-width:0}
+.house h3{font-size:clamp(30px,3vw,42px);line-height:1.05;margin-top:14px}
+.house .time{font:500 clamp(30px,3vw,40px)/1 var(--serif);color:var(--gold-hi);font-variant-numeric:tabular-nums;margin-top:18px}
+.house .time small{font:500 10.5px/1 var(--sans);letter-spacing:.32em;color:var(--ivory-3);margin-left:12px}
+.house p{color:var(--ivory-2);margin-top:14px;font-size:15px}
+.house .ph{font-variant-numeric:tabular-nums;color:var(--ivory)}
+
+/* Footer */
+footer{background:var(--deep);border-top:1px solid rgba(212,180,106,.18)}
+.foot{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;padding-block:clamp(72px,9vw,120px) 40px}
+.primary-lockup{display:grid;justify-items:start;gap:26px}
+.primary-lockup .mark{width:58px;height:103px}
+.primary-lockup .wm{font-size:22px}
+.primary-lockup .desc{display:block;margin-top:12px;padding-top:10px;border-top:1px solid var(--hair-on-olive);font:400 8.5px/1 var(--sans);letter-spacing:.46em;color:var(--gold-hi);text-transform:uppercase}
+.foot-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.foot-cols>div{min-width:0}
+.foot-cols ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px;font-size:14px;color:var(--ivory-2)}
+.foot-cols a{text-decoration:none}
+.foot-cols a:hover{color:var(--gold-hi)}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;border-top:1px solid rgba(212,180,106,.18);padding-block:24px calc(24px + env(safe-area-inset-bottom,0px));font:500 10px/1.6 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--ivory-3)}
+
+/* Responsive */
+@media (max-width:1020px){
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:56px}
+  .values{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:48px}
+  .foot-cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .nav ul,.nav .btn{display:none}
+  .menu-btn{display:inline-flex;align-items:center}
+  .hero-grid,.sec-head,.house-cols,.positioning,.std,.afar,.purpose,.contact-grid,.foot{grid-template-columns:minmax(0,1fr)}
+  .hero-grid{gap:0}
+  .hero{padding-top:calc(26svh + 120px)}
+  .hero-meta{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .scroll-cue{display:none!important}
+  .std-intro{position:static}
+  .grid-cars{grid-template-columns:minmax(0,1fr)}
+  .contact-aside{display:none}
+}
+@media (max-width:560px){
+  .steps,.values,.houses,.foot-cols{grid-template-columns:minmax(0,1fr)}
+  form.view{grid-template-columns:minmax(0,1fr)}
+  .hero-meta{grid-template-columns:minmax(0,1fr)}
+  .hero-meta>div{padding:14px 0;border-bottom:1px solid rgba(212,180,106,.16)}
+  .lockup .desc{display:none}
+  .std-row{grid-template-columns:minmax(0,1fr);gap:8px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  html.js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Shared gradients and the PNP monogram (traced from the brand book; replace with pnp-monogram-gold.svg when supplied) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9A452"/><stop offset=".45" stop-color="#B8923A"/><stop offset="1" stop-color="#8A6A28"/></linearGradient>
+    <linearGradient id="gGoldS" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D4B46A"/><stop offset=".5" stop-color="#B8923A"/><stop offset="1" stop-color="#9A7A30"/></linearGradient>
+    <radialGradient id="gPearl" cx=".36" cy=".34" r=".75"><stop offset="0" stop-color="#FFF7DE"/><stop offset=".35" stop-color="#F0DA98"/><stop offset=".75" stop-color="#D4B46A"/><stop offset="1" stop-color="#9A7A30"/></radialGradient>
+  </defs>
+  <symbol id="mark" viewBox="0 0 230 410">
+    <polygon points="0,0 26,0 26,382 0,408" style="fill:var(--mk)"/>
+    <polyline points="55,8 139,8 214,83 214,187 139,262 55,262" style="fill:none;stroke:var(--mks)" stroke-width="16" stroke-linejoin="miter"/>
+    <polyline points="55,63 117,63 159,105 159,165 117,207 55,207" style="fill:none;stroke:var(--mks)" stroke-width="16" stroke-linejoin="miter"/>
+    <circle cx="88" cy="135" r="27" style="fill:var(--mkp)"/>
+  </symbol>
+  <symbol id="car-gt" viewBox="0 0 300 92"><path pathLength="1" d="M14 70 L14 60 Q16 54 34 52 L92 47 Q118 30 148 26 L186 25 Q212 26 236 42 L272 48 Q288 51 288 60 L288 70 L254 70 A19 19 0 0 0 216 70 L89 70 A19 19 0 0 0 51 70 Z"/><path pathLength="1" d="M106 46 Q126 33 152 31 L186 31 Q206 32 222 44 Z M168 31 L166 45"/><circle pathLength="1" cx="70" cy="70" r="15"/><circle pathLength="1" cx="70" cy="70" r="6"/><circle pathLength="1" cx="235" cy="70" r="15"/><circle pathLength="1" cx="235" cy="70" r="6"/></symbol>
+  <symbol id="car-saloon" viewBox="0 0 300 92"><path pathLength="1" d="M12 70 L12 60 Q14 54 30 52 L84 48 L112 30 Q118 26 128 26 L196 26 Q206 26 214 32 L240 48 L276 52 Q288 54 288 62 L288 70 L256 70 A19 19 0 0 0 218 70 L88 70 A19 19 0 0 0 50 70 Z"/><path pathLength="1" d="M118 46 L131 32 L166 32 L166 46 Z M174 32 L200 32 Q206 32 210 36 L223 46 L174 46 Z"/><circle pathLength="1" cx="69" cy="70" r="15"/><circle pathLength="1" cx="69" cy="70" r="6"/><circle pathLength="1" cx="237" cy="70" r="15"/><circle pathLength="1" cx="237" cy="70" r="6"/></symbol>
+  <symbol id="car-suv" viewBox="0 0 300 92"><path pathLength="1" d="M14 72 L14 52 Q16 46 30 44 L70 40 L96 18 Q100 14 110 14 L224 14 Q234 14 240 20 L262 40 L282 44 Q290 46 290 56 L290 72 L258 72 A20 20 0 0 0 218 72 L92 72 A20 20 0 0 0 52 72 Z"/><path pathLength="1" d="M102 38 L117 22 L170 22 L170 38 Z M178 22 L229 22 L246 38 L178 38 Z"/><circle pathLength="1" cx="72" cy="72" r="16"/><circle pathLength="1" cx="72" cy="72" r="6"/><circle pathLength="1" cx="238" cy="72" r="16"/><circle pathLength="1" cx="238" cy="72" r="6"/></symbol>
+</svg>
+
+<!-- Logo reveal: 0.0 s silence, 0.8 s outer line, 1.6 s inner line and stem, 2.2 s pearl glint, 3.0 s name -->
+<div class="intro" id="intro" role="presentation">
+  <div class="intro-inner">
+    <svg viewBox="0 0 230 410" aria-hidden="true">
+      <polygon class="i-stem" points="0,0 26,0 26,382 0,408" fill="url(#gGold)"/>
+      <polyline class="i-line i-outer" pathLength="1" points="55,8 139,8 214,83 214,187 139,262 55,262" fill="none" stroke="url(#gGoldS)" stroke-width="16" stroke-linejoin="miter"/>
+      <polyline class="i-line i-inner" pathLength="1" points="55,63 117,63 159,105 159,165 117,207 55,207" fill="none" stroke="url(#gGoldS)" stroke-width="16" stroke-linejoin="miter"/>
+      <circle class="i-pearl" cx="88" cy="135" r="27" fill="url(#gPearl)"/>
+      <circle class="i-glint" cx="80" cy="126" r="7" fill="#FFF9E8"/>
+    </svg>
+    <div class="i-name">
+      <div class="wm gold-text"><b>PNP</b> <span>Motors</span></div>
+      <span class="desc">Palm &amp; Pearls Motors</span>
+    </div>
+  </div>
+  <span class="label skip">Tap to enter</span>
+</div>
+
+<canvas id="stage" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="lockup" href="#top" aria-label="PNP Motors, home">
+      <svg class="mark" viewBox="0 0 230 410" aria-hidden="true"><use href="#mark"/></svg>
+      <span><span class="wm gold-text"><b>PNP</b> <span>Motors</span></span><span class="desc">Palm &amp; Pearls Motors</span></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#standard">Verified</a></li>
+        <li><a href="#buying">Buying</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#contact">Private viewing</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="sheet">Menu<i></i></button>
+  </div>
+</header>
+<div class="sheet" id="sheet">
+  <a href="#collection">Collection</a>
+  <a href="#standard">Verified</a>
+  <a href="#buying">Buying</a>
+  <a href="#contact">Contact</a>
+  <span class="label">Private viewings by appointment</span>
+</div>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="band on-olive hero" data-scene="hero" aria-label="Introduction">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="label fade-in">The fine-car house of Palm &amp; Pearls</p>
+          <h1><span class="ln"><span>Hand-picked.</span></span><span class="ln"><span>Verified.</span></span><span class="ln"><span><em>Fine</em> cars.</span></span></h1>
+          <p class="lede fade-in">A small collection of very premium pre-owned cars, chosen from verified partner dealers and shown only once each one meets our standard. What you see is what you drive.</p>
+          <div class="ctas fade-in">
+            <a class="btn" href="#contact">Request a private viewing</a>
+            <a class="link" href="#collection">View the collection <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-meta fade-in">
+        <div><b>Dubai</b>And the GCC</div>
+        <div><b>India</b>Mumbai and Navi Mumbai</div>
+        <div><b>By appointment</b>Private viewings, quiet service</div>
+        <a class="scroll-cue label" href="#house" aria-label="Scroll to The House"><i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The House -->
+  <section class="band on-ivory sec" id="house">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="label kicker rv">The house</p>
+          <h2 class="h2 rv d1">Fine cars, chosen with care.</h2>
+        </div>
+        <p class="prose rv d2">PNP Motors, short for Palm and Pearls Motors, offers a small, hand-picked collection of very premium pre-owned cars to buyers between Dubai and India. We say no to most cars.</p>
+      </div>
+      <div class="house-cols">
+        <div><div class="rule rv"></div><p class="label rv">What we do</p><p class="rv d1">We select premium cars from verified partner dealers, check them, document them and present them in private. Each car is shown only once it meets our standard.</p></div>
+        <div><div class="rule rv d1"></div><p class="label rv d1">For whom</p><p class="rv d2">Buyers who value certainty over volume: business owners, collectors, executives and families who want a fine car without the guesswork of the used-car market.</p></div>
+        <div><div class="rule rv d2"></div><p class="label rv d2">Where</p><p class="rv d3">Dubai and the GCC, and India, with Mumbai and Navi Mumbai as our home market. We understand both sides of the journey.</p></div>
+      </div>
+      <div class="positioning">
+        <p class="label rv">Our position</p>
+        <blockquote class="rv d1">For buyers who want a fine car without the uncertainty, PNP Motors is the private house that hand-picks and verifies every car before it is shown, so <em>what you see is what you drive.</em></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- The PNP Standard -->
+  <section class="band on-olive sec" id="standard" data-scene="standard">
+    <div class="wrap std">
+      <div class="std-intro">
+        <p class="label kicker rv">The PNP standard</p>
+        <h2 class="h2 rv d1">Verified before it is shown.</h2>
+        <p class="prose rv d2">Five things a car must earn before we show it to you. If a car falls short on any of them, it does not reach the collection.</p>
+        <div class="pearl-div rv d3" aria-hidden="true"><i></i><b></b><i></i></div>
+      </div>
+      <ol class="std-list" id="stdList">
+        <li class="std-row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.5l3.5 2"/></svg>
+          <div><h3>Provenance</h3><p>Known owners, documented history and verifiable mileage.</p><span class="label">Owners · history · odometer</span></div>
+        </li>
+        <li class="std-row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 16.5a8.5 8.5 0 0 1 17 0"/><path d="M12 16.5l4-5"/><path d="M3 19.5h18"/></svg>
+          <div><h3>Condition</h3><p>Inspected, with every finding recorded in a written condition report.</p><span class="label">Exterior · interior · mechanical</span></div>
+        </li>
+        <li class="std-row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 3h9l4 4v14h-13z"/><path d="M14.5 3v4h4"/><path d="M8.5 11.5h7M8.5 15.5h7"/></svg>
+          <div><h3>Paperwork</h3><p>Clear title, with the papers explained to you before any commitment.</p><span class="label">Title · registration · service book</span></div>
+        </li>
+        <li class="std-row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h4l2-3h6l2 3h4v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <div><h3>Presentation</h3><p>Shown clean, calm and properly photographed. The real car, in honest light.</p><span class="label">Six views of every car</span></div>
+        </li>
+        <li class="std-row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V3.5h8.5L21 13l-8 8z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg>
+          <div><h3>Transparency</h3><p>One price, with no surprises behind it. Ask us anything.</p><span class="label">One price · one conversation</span></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Collection -->
+  <section class="band on-ivory sec" id="collection">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="label kicker rv">The collection</p>
+          <h2 class="h2 rv d1">A short list, not a catalogue.</h2>
+        </div>
+        <div class="rv d2" style="display:grid;gap:28px">
+          <p class="prose">Every car here has been inspected and verified. Open any car to read its condition report, then ask for a private viewing.</p>
+          <div class="filters" role="group" aria-label="Filter by location">
+            <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-f="dubai" aria-pressed="false">Dubai</button>
+            <button class="chip" type="button" data-f="india" aria-pressed="false">India</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-cars" id="cars">
+        <button class="card rv" type="button" data-car="gt" data-city="dubai">
+          <div class="shot">
+            <span class="tag"><i></i>Verified</span>
+            <svg class="mono-wm mark" viewBox="0 0 230 410" aria-hidden="true"><use href="#mark"/></svg>
+            <span class="floor"></span>
+            <svg class="car-art" viewBox="0 0 300 92" aria-hidden="true"><use href="#car-gt"/></svg>
+            <span class="note">Photograph to follow</span>
+          </div>
+          <div class="card-body">
+            <h3>Sample · 2022 Grand Tourer</h3>
+            <p class="facts">12,400 km · One owner · Full service history · Dubai</p>
+            <div class="card-foot"><span class="price">AED [price]</span><span class="label">Condition report <span aria-hidden="true">&rarr;</span></span></div>
+          </div>
+        </button>
+
+        <button class="card rv d1" type="button" data-car="saloon" data-city="india">
+          <div class="shot">
+            <span class="tag"><i></i>Verified</span>
+            <svg class="mono-wm mark" viewBox="0 0 230 410" aria-hidden="true"><use href="#mark"/></svg>
+            <span class="floor"></span>
+            <svg class="car-art" viewBox="0 0 300 92" aria-hidden="true"><use href="#car-saloon"/></svg>
+            <span class="note">Photograph to follow</span>
+          </div>
+          <div class="card-body">
+            <h3>Sample · 2021 Executive Saloon</h3>
+            <p class="facts">18,400 km · One owner · Full service history · Navi Mumbai</p>
+            <div class="card-foot"><span class="price">₹ [price]</span><span class="label">Condition report <span aria-hidden="true">&rarr;</span></span></div>
+          </div>
+        </button>
+
+        <button class="card rv" type="button" data-car="suv" data-city="dubai">
+          <div class="shot">
+            <span class="tag"><i></i>Verified</span>
+            <svg class="mono-wm mark" viewBox="0 0 230 410" aria-hidden="true"><use href="#mark"/></svg>
+            <span class="floor"></span>
+            <svg class="car-art" viewBox="0 0 300 92" aria-hidden="true"><use href="#car-suv"/></svg>
+            <span class="note">Photograph to follow</span>
+          </div>
+          <div class="card-body">
+            <h3>Sample · 2023 Luxury SUV</h3>
+            <p class="facts">9,800 km · Two owners · Agent serviced · Dubai</p>
+            <div class="card-foot"><span class="price">AED [price]</span><span class="label">Condition report <span aria-hidden="true">&rarr;</span></span></div>
+          </div>
+        </button>
+
+        <div class="statement rv d1">
+          <div>
+            <p class="label">Looking for something specific</p>
+            <h3 style="margin-top:18px">Tell us the car. We will look for it privately.</h3>
+            <p>Make, model, year, colour and budget. We search our verified partner dealers in Dubai and India and come back only with cars worth your time.</p>
+          </div>
+          <div><a class="btn" href="#contact">Start a private search</a></div>
+        </div>
+      </div>
+      <p class="honesty rv">We list cars from verified partner dealers and present them on your behalf. Specifications are stated only where the inspection report and papers support them. Prices on request until confirmed.</p>
+    </div>
+  </section>
+
+  <!-- Buying -->
+  <section class="band on-olive sec" id="buying" data-scene="buying">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="label kicker rv">How buying works</p>
+          <h2 class="h2 rv d1">A clean, explained process.</h2>
+        </div>
+        <p class="prose rv d2">Four steps, at your pace. You deal with one advisor from the first message to the day you collect your keys.</p>
+      </div>
+      <ol class="steps" style="list-style:none;margin:0;padding:0">
+        <li class="step"><div class="rule rv"></div><span class="n rv">01</span><h3 class="rv">Tell us the car</h3><p class="rv d1">Share what you are looking for, by message, call or in person. Or choose one from the collection.</p></li>
+        <li class="step"><div class="rule rv d1"></div><span class="n rv d1">02</span><h3 class="rv d1">We hand-pick and verify</h3><p class="rv d2">We source from verified partner dealers, inspect the car and record the findings in a condition report.</p></li>
+        <li class="step"><div class="rule rv d2"></div><span class="n rv d2">03</span><h3 class="rv d2">Private viewing</h3><p class="rv d3">See the car by appointment in Dubai or Navi Mumbai, or on a live video walk-around from wherever you are.</p></li>
+        <li class="step"><div class="rule rv d3"></div><span class="n rv d3">04</span><h3 class="rv d3">Papers and handover</h3><p class="rv d3">Clear title, explained before you commit. You receive an olive wallet with the papers, the printed condition report and a handwritten note.</p></li>
+      </ol>
+      <div class="afar">
+        <h3 class="rv">Buying from afar</h3>
+        <p class="prose rv d1">For buyers overseas and between Dubai and India: clear photographs of the real car, the full document set and honest answers, with a video walk-around whenever you want one. You can decide with confidence without making the trip.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why we exist -->
+  <section class="band on-ivory sec" id="why">
+    <div class="wrap">
+      <div class="purpose">
+        <div><p class="label rv">Purpose</p><p class="q rv d1">To find cars of lasting value, and to guide every buyer to them with honesty, discretion and care.</p></div>
+        <div><p class="label rv d1">Vision</p><p class="q rv d2">To be the most trusted private house for fine cars between Dubai and India.</p></div>
+      </div>
+      <div class="values">
+        <div><div class="rule rv"></div><h3 class="rv">Discretion</h3><p class="rv d1">Private viewings, quiet service, no pressure. We never name our clients.</p></div>
+        <div><div class="rule rv d1"></div><h3 class="rv d1">Curation</h3><p class="rv d2">A short list, not a catalogue. We say no to most cars.</p></div>
+        <div><div class="rule rv d2"></div><h3 class="rv d2">Integrity</h3><p class="rv d3">Verified before shown. We state what the paperwork supports and nothing more.</p></div>
+        <div><div class="rule rv d3"></div><h3 class="rv d3">Enduring value</h3><p class="rv d3">We choose cars that hold their worth and their character.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="band on-olive sec" id="contact" data-scene="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <p class="label kicker rv">Private viewing</p>
+          <h2 class="h2 rv d1">Private viewings, by appointment.</h2>
+          <p class="prose rv d2" style="margin-top:24px">Tell us which car, or what you are looking for, and when suits you. An advisor will reply personally.</p>
+
+          <form class="view" id="viewForm" novalidate>
+            <div class="f rv"><label for="fName">Your name</label><input id="fName" name="name" autocomplete="name" placeholder="Full name" required><span class="err" id="eName"></span></div>
+            <div class="f rv d1"><label for="fPhone">Phone or WhatsApp</label><input id="fPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+971 or +91" required><span class="err" id="ePhone"></span></div>
+            <div class="f rv"><label for="fCity">Where you are</label>
+              <select id="fCity" name="city">
+                <option>Dubai</option><option>Elsewhere in the GCC</option><option>Mumbai or Navi Mumbai</option><option>Elsewhere in India</option><option>Overseas</option>
+              </select></div>
+            <div class="f rv d1"><label for="fCar">Interested in</label>
+              <select id="fCar" name="car">
+                <option value="search">A private search for a specific car</option>
+                <option value="gt">Sample · 2022 Grand Tourer</option>
+                <option value="saloon">Sample · 2021 Executive Saloon</option>
+                <option value="suv">Sample · 2023 Luxury SUV</option>
+              </select></div>
+            <div class="f rv"><label for="fDate">Preferred date</label><input id="fDate" name="date" type="date"></div>
+            <div class="f rv d1"><label for="fMode">Viewing</label>
+              <select id="fMode" name="mode"><option>In person</option><option>Video walk-around</option></select></div>
+            <div class="f full rv"><label for="fNote">Anything we should know</label><textarea id="fNote" name="note" placeholder="Make, model, year, colour, budget"></textarea></div>
+            <div class="form-foot rv">
+              <button class="btn" type="submit">Continue on WhatsApp</button>
+              <p>WhatsApp opens with your request written out. Press send and an advisor will reply personally.</p>
+            </div>
+          </form>
+
+          <div class="done" id="done" hidden>
+            <p class="label">Your request</p>
+            <h3 id="doneTitle">Thank you.</h3>
+            <p class="prose" style="margin-top:12px">WhatsApp should now be open with your request. If it did not open, use the button below.</p>
+            <pre id="doneMsg"></pre>
+            <div class="row">
+              <a class="btn" id="waLink" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
+              <button class="link" type="button" id="copyBtn" style="background-color:transparent;border:0;cursor:pointer">Copy message</button>
+              <button class="link" type="button" id="editBtn" style="background-color:transparent;border:0;cursor:pointer">Edit request</button>
+            </div>
+          </div>
+        </div>
+        <div class="contact-aside" aria-hidden="true"></div>
+      </div>
+
+      <div class="houses">
+        <div class="house rv">
+          <p class="label">Dubai · GCC</p>
+          <h3>Dubai</h3>
+          <div class="time"><span data-tz="Asia/Dubai">--:--</span><small>GST</small></div>
+          <p>Private viewings by appointment.<br><span class="ph">[+971 00 000 0000]</span></p>
+        </div>
+        <div class="house rv d1">
+          <p class="label">India · Home market</p>
+          <h3>Mumbai &amp; Navi Mumbai</h3>
+          <div class="time"><span data-tz="Asia/Kolkata">--:--</span><small>IST</small></div>
+          <p>Private viewings by appointment.<br><span class="ph">[+91 00000 00000]</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="primary-lockup">
+        <svg class="mark" viewBox="0 0 230 410" aria-hidden="true"><use href="#mark"/></svg>
+        <div><div class="wm gold-text"><b>PNP</b> <span>Motors</span></div><span class="desc">Palm &amp; Pearls Motors</span></div>
+        <p style="font:500 22px/1.3 var(--serif);color:var(--gold-hi)">Hand-picked. Verified. Fine cars.</p>
+      </div>
+      <div class="foot-cols">
+        <div><p class="label">The house</p><ul><li><a href="#house">About</a></li><li><a href="#standard">The PNP standard</a></li><li><a href="#why">Purpose and values</a></li></ul></div>
+        <div><p class="label">Buying</p><ul><li><a href="#collection">Collection</a></li><li><a href="#buying">How it works</a></li><li><a href="#contact">Private viewing</a></li></ul></div>
+        <div><p class="label">Contact</p><ul><li>[hello@pnpmotors.com]</li><li>[+971 00 000 0000]</li><li>[+91 00000 00000]</li><li>Instagram [@pnp.motors]</li></ul></div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>PNP Motors · The fine-car house of Palm &amp; Pearls</span>
+      <span>Dubai · Mumbai · Navi Mumbai</span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="report" id="report" aria-labelledby="repTitle">
+  <div class="rep">
+    <div class="rep-top">
+      <span class="lockup">
+        <svg class="mark ink" viewBox="0 0 230 410" aria-hidden="true"><use href="#mark"/></svg>
+        <span><span class="wm"><b>PNP</b> <span>Motors</span></span><span class="desc">Palm &amp; Pearls Motors</span></span>
+      </span>
+      <button class="x" type="button" id="repClose">Close</button>
+    </div>
+    <p class="label">Condition report</p>
+    <h3 id="repTitle"></h3>
+    <dl id="repList"></dl>
+    <p class="sig">Sample · Inspected by [name] · [date]</p>
+    <button class="btn" type="button" id="repView">Request a private viewing</button>
+  </div>
+</dialog>
+
+<script src="assets/three.min.js"></script>
+<script>
+(function(){
+  const root=document.documentElement;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Intro */
+  const intro=document.getElementById('intro');
+  let seen=false;
+  try{seen=sessionStorage.getItem('pnp-intro')==='1'}catch(e){}
+  function ready(){root.classList.add('ready')}
+  function endIntro(){
+    if(!intro||intro.classList.contains('out'))return;
+    intro.classList.add('out');ready();
+    try{sessionStorage.setItem('pnp-intro','1')}catch(e){}
+    setTimeout(()=>intro.remove(),900);
+  }
+  if(seen||reduce){intro.remove();ready()}
+  else{
+    setTimeout(endIntro,4300);
+    intro.addEventListener('click',endIntro);
+    addEventListener('keydown',endIntro,{once:true});
+  }
+
+  /* Nav */
+  const nav=document.getElementById('nav');
+  const navLinks=[...document.querySelectorAll('.nav ul a')];
+  const sections=navLinks.map(a=>document.querySelector(a.getAttribute('href')));
+  function onScroll(){
+    nav.classList.toggle('solid',scrollY>40);
+    const mid=innerHeight*.4;let cur=-1;
+    sections.forEach((s,i)=>{const r=s.getBoundingClientRect();if(r.top<mid&&r.bottom>mid)cur=i});
+    navLinks.forEach((a,i)=>a.classList.toggle('cur',i===cur));
+    stdActive();
+  }
+  addEventListener('scroll',onScroll,{passive:true});
+  const menuBtn=document.getElementById('menuBtn'),sheet=document.getElementById('sheet');
+  menuBtn.addEventListener('click',()=>{const o=!sheet.classList.contains('open');sheet.classList.toggle('open',o);menuBtn.setAttribute('aria-expanded',o);menuBtn.firstChild.textContent=o?'Close':'Menu'});
+  sheet.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{sheet.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.firstChild.textContent='Menu'}));
+
+  /* Reveal: only things below the first screen wait to animate in */
+  const rvs=[...document.querySelectorAll('.rv')];
+  if(!('IntersectionObserver' in window)||reduce){rvs.forEach(e=>e.classList.add('in'))}
+  else{
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(e=>{if(e.getBoundingClientRect().top<innerHeight)e.classList.add('in');else io.observe(e)});
+  }
+
+  /* Standard: the row nearest the middle of the screen is lit */
+  const stdList=document.getElementById('stdList');
+  const stdRows=[...stdList.children];
+  if(!reduce)stdList.classList.add('live');
+  function stdActive(){
+    const mid=innerHeight*.5;let best=0,bd=1e9;
+    stdRows.forEach((r,i)=>{const b=r.getBoundingClientRect();const d=Math.abs(b.top+b.height/2-mid);if(d<bd){bd=d;best=i}});
+    stdRows.forEach((r,i)=>r.classList.toggle('on',i===best));
+  }
+
+  /* Collection */
+  const cars={
+    gt:{name:'Sample · 2022 Grand Tourer',rows:[['Odometer','12,400 km'],['Owners','One'],['Service history','Full, agent serviced'],['Exterior','[Inspector notes]'],['Interior','[Inspector notes]'],['Mechanical','[Inspector notes]'],['Paperwork','Clear title · [to confirm]'],['Location','Dubai'],['Price','AED [price]']]},
+    saloon:{name:'Sample · 2021 Executive Saloon',rows:[['Odometer','18,400 km'],['Owners','One'],['Service history','Full'],['Exterior','[Inspector notes]'],['Interior','[Inspector notes]'],['Mechanical','[Inspector notes]'],['Paperwork','Clear title · [to confirm]'],['Location','Navi Mumbai'],['Price','₹ [price]']]},
+    suv:{name:'Sample · 2023 Luxury SUV',rows:[['Odometer','9,800 km'],['Owners','Two'],['Service history','Agent serviced'],['Exterior','[Inspector notes]'],['Interior','[Inspector notes]'],['Mechanical','[Inspector notes]'],['Paperwork','Clear title · [to confirm]'],['Location','Dubai'],['Price','AED [price]']]}
+  };
+  const chips=[...document.querySelectorAll('.chip')];
+  chips.forEach(c=>c.addEventListener('click',()=>{
+    chips.forEach(x=>x.setAttribute('aria-pressed',x===c?'true':'false'));
+    document.querySelectorAll('.card').forEach(card=>{card.hidden=!(c.dataset.f==='all'||card.dataset.city===c.dataset.f)});
+  }));
+  const dlg=document.getElementById('report');let openCar=null;
+  document.querySelectorAll('.card').forEach(card=>card.addEventListener('click',()=>{
+    const c=cars[card.dataset.car];openCar=card.dataset.car;
+    document.getElementById('repTitle').textContent=c.name;
+    const dl=document.getElementById('repList');dl.innerHTML='';
+    c.rows.forEach(([k,v])=>{const d=document.createElement('div');const dt=document.createElement('dt');dt.textContent=k;const dd=document.createElement('dd');dd.textContent=v;d.append(dt,dd);dl.append(d)});
+    if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
+  }));
+  function closeDlg(){if(dlg.close)dlg.close();else dlg.removeAttribute('open')}
+  document.getElementById('repClose').addEventListener('click',closeDlg);
+  dlg.addEventListener('click',e=>{if(e.target===dlg)closeDlg()});
+  document.getElementById('repView').addEventListener('click',()=>{
+    closeDlg();showForm();document.getElementById('fCar').value=openCar;
+    document.getElementById('contact').scrollIntoView({behavior:reduce?'auto':'smooth'});
+    setTimeout(()=>document.getElementById('fName').focus({preventScroll:true}),900);
+  });
+
+  /* Clocks */
+  const clocks=[...document.querySelectorAll('[data-tz]')];
+  function tick(){clocks.forEach(el=>{try{el.textContent=new Intl.DateTimeFormat('en-GB',{timeZone:el.dataset.tz,hour:'2-digit',minute:'2-digit'}).format(new Date())}catch(e){}})}
+  tick();setInterval(tick,15000);
+
+  /* Viewing request: composes a WhatsApp message; nothing is sent until the visitor sends it */
+  const WHATSAPP='971000000000'; // [replace with the PNP Motors WhatsApp number]
+  const form=document.getElementById('viewForm'),done=document.getElementById('done');
+  const dateIn=document.getElementById('fDate');
+  dateIn.min=new Date().toISOString().slice(0,10);
+  function showForm(){form.hidden=false;done.hidden=true}
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const v=id=>document.getElementById(id);
+    const name=v('fName').value.trim(),phone=v('fPhone').value.trim();
+    document.getElementById('eName').textContent=name?'':'Please tell us your name.';
+    document.getElementById('ePhone').textContent=phone.replace(/\D/g,'').length>=7?'':'Please add a phone or WhatsApp number we can reach.';
+    if(!name||phone.replace(/\D/g,'').length<7)return;
+    const carSel=v('fCar').options[v('fCar').selectedIndex].text;
+    let when='Flexible';
+    if(v('fDate').value){const d=new Date(v('fDate').value+'T12:00:00');when=d.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}
+    const lines=['Private viewing request','','Name: '+name,'Phone: '+phone,'Location: '+v('fCity').value,'Interested in: '+carSel,'Viewing: '+v('fMode').value,'Preferred date: '+when];
+    if(v('fNote').value.trim())lines.push('Note: '+v('fNote').value.trim());
+    const msg=lines.join('\n');
+    document.getElementById('doneTitle').textContent='Thank you, '+name.split(' ')[0]+'.';
+    document.getElementById('doneMsg').textContent=msg;
+    document.getElementById('waLink').href='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(msg);
+    form.hidden=true;done.hidden=false;
+    window.open(document.getElementById('waLink').href,'_blank','noopener');
+  });
+  document.getElementById('editBtn').addEventListener('click',showForm);
+  document.getElementById('copyBtn').addEventListener('click',e=>{
+    const b=e.currentTarget,txt=document.getElementById('doneMsg').textContent;
+    const ok=()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy message',2000)};
+    const fallback=()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('doneMsg'));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press copy'};
+    try{navigator.clipboard.writeText(txt).then(ok,fallback)}catch(err){fallback()}
+  });
+
+  onScroll();
+
+  /* 3D stage: a pearl, its chamfered ripples, and a tunnel of fine gold frames */
+  const canvas=document.getElementById('stage');
+  if(!window.THREE){canvas.remove();return}
+  let renderer;
+  try{renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,powerPreference:'high-performance'})}catch(e){canvas.remove();return}
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+  renderer.setClearColor(0x000000,0);
+  renderer.outputEncoding=THREE.sRGBEncoding;
+  renderer.toneMapping=THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure=1.0;
+
+  const scene=new THREE.Scene();
+  const camera=new THREE.PerspectiveCamera(40,1,0.1,240);
+
+  // Studio light for reflections: dark olive room, a warm softbox above, a gold strip and an ivory rim
+  const pmrem=new THREE.PMREMGenerator(renderer);
+  const env=new THREE.Scene();
+  env.add(new THREE.Mesh(new THREE.SphereGeometry(60,32,16),new THREE.MeshBasicMaterial({color:0x1b2114,side:THREE.BackSide})));
+  function panel(w,h,hex,k,x,y,z){const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:new THREE.Color(hex).multiplyScalar(k),side:THREE.DoubleSide}));m.position.set(x,y,z);m.lookAt(0,0,0);env.add(m)}
+  panel(34,12,0xfff2d6,3.0,-4,24,10);
+  panel(6,34,0xd4b46a,1.8,-26,0,8);
+  panel(5,26,0xf5f0e3,1.5,24,4,-4);
+  panel(44,8,0x8a7a48,0.5,0,-22,0);
+  const envMap=pmrem.fromScene(env,0.035).texture;
+
+  const pearlGroup=new THREE.Group();scene.add(pearlGroup);
+  const pearl=new THREE.Mesh(new THREE.SphereGeometry(1,128,96),new THREE.MeshPhysicalMaterial({color:0xEBCF8E,metalness:0.62,roughness:0.18,clearcoat:1,clearcoatRoughness:0.05,envMap,envMapIntensity:1.15}));
+  pearlGroup.add(pearl);
+  const key=new THREE.DirectionalLight(0xfff1d0,0.9);key.position.set(-4,6,8);scene.add(key);
+  scene.add(new THREE.AmbientLight(0x45522f,0.35));
+  const glint=new THREE.PointLight(0xfff8e6,1.1,12);pearlGroup.add(glint);
+
+  // The mark's open, chamfered line, normalised so the pearl has radius 1
+  function chamfer(a,b,h,c){return[[-a,h],[b-c,h],[b,h-c],[b,-h+c],[b-c,-h],[-a,-h]].map(p=>new THREE.Vector3(p[0],p[1],0))}
+  const ripGeo=new THREE.BufferGeometry().setFromPoints(chamfer(1.22,4.67,4.7,2.78));
+  const ripples=[];
+  for(let i=0;i<4;i++){const m=new THREE.LineBasicMaterial({color:0xF0DA98,transparent:true,opacity:0,depthWrite:false});const l=new THREE.Line(ripGeo,m);pearlGroup.add(l);ripples.push(l)}
+
+  const frameGeo=new THREE.BufferGeometry().setFromPoints(chamfer(9.5,9.5,5.2,2.6));
+  const frames=[];
+  for(let i=0;i<46;i++){const m=new THREE.LineBasicMaterial({color:0xD4B46A,transparent:true,opacity:0,depthWrite:false});const l=new THREE.Line(frameGeo,m);l.position.z=6-i*3.2;scene.add(l);frames.push(l)}
+
+  // One camera and pearl position per olive section; scroll blends between them
+  const S={
+    hero:    {cz:14, px:3.9, py:0.2, pz:0,    ps:1.55,ro:0.75, m:{px:0.9, py:3.3, ps:0.85}},
+    standard:{cz:-14,px:-5.4,py:-1.8,pz:-30,  ps:1.05,ro:0.35, m:{px:-1.4,py:-5.2,ps:0.7}},
+    buying:  {cz:-50,px:5.8, py:2.2, pz:-66,  ps:1.0, ro:0.35, m:{px:1.6, py:5.6, ps:0.7}},
+    contact: {cz:-88,px:4.8, py:0.3, pz:-102, ps:1.45,ro:0.65, m:{px:1.5, py:-5.4,ps:0.8}}
+  };
+  const keys=['cz','px','py','pz','ps','ro'];
+  const sceneEls=[...document.querySelectorAll('[data-scene]')];
+  function stateOf(name){const s=S[name];if(innerWidth>=860)return s;return Object.assign({},s,s.m)}
+  const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+  function target(){
+    const mid=innerHeight/2;
+    const pts=sceneEls.map(el=>{const r=el.getBoundingClientRect();return{c:r.top+Math.min(r.height,innerHeight)/2,s:stateOf(el.dataset.scene)}});
+    if(mid<=pts[0].c)return pts[0].s;
+    for(let i=0;i<pts.length-1;i++){
+      if(mid>=pts[i].c&&mid<=pts[i+1].c){const t=ease((mid-pts[i].c)/(pts[i+1].c-pts[i].c));const o={};keys.forEach(k=>o[k]=pts[i].s[k]+(pts[i+1].s[k]-pts[i].s[k])*t);return o}
+    }
+    return pts[pts.length-1].s;
+  }
+  const cur=Object.assign({},target());
+
+  let mx=0,my=0,sx=0,sy=0;
+  addEventListener('pointermove',e=>{mx=e.clientX/innerWidth*2-1;my=e.clientY/innerHeight*2-1},{passive:true});
+
+  let visible=new Set();
+  const vio=new IntersectionObserver(es=>es.forEach(e=>{e.isIntersecting?visible.add(e.target):visible.delete(e.target)}),{rootMargin:'10% 0px'});
+  sceneEls.forEach(el=>vio.observe(el));
+
+  function resize(){renderer.setSize(innerWidth,innerHeight,false);camera.aspect=innerWidth/innerHeight;camera.fov=innerWidth<860?52:40;camera.updateProjectionMatrix()}
+  addEventListener('resize',resize);resize();
+
+  const smooth=x=>x<=0?0:x>=1?1:x*x*(3-2*x);
+  const clock=new THREE.Clock();
+  function render(){
+    const t=clock.getElapsedTime();
+    const tg=target();const k=reduce?1:0.055;
+    keys.forEach(key=>cur[key]+=(tg[key]-cur[key])*k);
+    sx+=(mx-sx)*0.04;sy+=(my-sy)*0.04;
+    camera.position.set(sx*0.7,-sy*0.4,cur.cz);
+    camera.lookAt(sx*0.15,0,cur.cz-30);
+    pearlGroup.position.set(cur.px,cur.py,cur.pz);
+    pearlGroup.scale.setScalar(cur.ps);
+    pearlGroup.lookAt(camera.position);
+    pearl.rotation.y=t*0.08;
+    const ga=t*0.35;glint.position.set(Math.cos(ga)*2.2,1.4+Math.sin(ga*0.7)*0.6,2.6);
+    ripples.forEach((r,i)=>{
+      const p=reduce?(i+0.5)/4:((t*0.075)+i/4)%1;
+      r.scale.setScalar(0.52+p*1.25);
+      r.material.opacity=Math.pow(Math.sin(Math.PI*p),1.6)*0.55*cur.ro;
+    });
+    frames.forEach(f=>{
+      const d=cur.cz-f.position.z;
+      f.material.opacity=d<0.5?0:smooth((d-0.5)/5)*(1-smooth((d-12)/46))*0.42;
+    });
+    renderer.render(scene,camera);
+  }
+  (function loop(){requestAnimationFrame(loop);if(visible.size||!sceneEls.length)render()})();
+})();
+</script>
+
+</body>
+</html>
