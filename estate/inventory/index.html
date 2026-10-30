@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Inventory · Palm &amp; Pearls Real Estate</title>
+<meta name="description" content="Palm & Pearls inventory: hand-selected residences across Dubai, from ready homes to off-plan launches. Details and viewings on request.">
+<link rel="canonical" href="https://palmnpearls.com/estate/inventory/">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#343F27">
+<meta property="og:title" content="Inventory · Palm & Pearls">
+<meta property="og:description" content="Hand-selected residences across Dubai. Details and viewings on request.">
+<meta property="og:url" content="https://palmnpearls.com/estate/inventory/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap">
+<style>
+:root{
+  --olive:#343F27; --deep:#2A331F; --grove:#45522F; --sage:#6B7A48;
+  --ivory:#F5F0E3; --paper:#E9E2CF; --paper-2:#FAF7EF;
+  --gold:#B8923A; --gold-hi:#D4B46A; --gold-lo:#7E5E20; --champagne:#F0DA98;
+  --ivory-2:rgba(245,240,227,.76); --ivory-3:rgba(245,240,227,.52);
+  --ink:#343F27; --ink-2:rgba(52,63,39,.78); --ink-3:rgba(52,63,39,.56);
+  --hair-o:rgba(212,180,106,.36); --hair-i:rgba(126,94,32,.3);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Jost','Century Gothic',Futura,'Avenir Next',sans-serif;
+  --ease:cubic-bezier(.45,0,.15,1);
+  --gut:max(clamp(16px,5vw,80px),env(safe-area-inset-left,0px));
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;letter-spacing:-.005em;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1320px;margin-inline:auto;padding-inline:var(--gut)}
+.label{font:500 11px/1.5 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold-lo)}
+:focus-visible{outline:2px solid var(--gold-lo);outline-offset:3px}
+
+/* Header */
+.nav{position:sticky;top:0;z-index:40;background:rgba(52,63,39,.95);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,180,106,.22)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.nav img{height:44px;width:auto;display:block}
+.nav ul{display:flex;gap:clamp(14px,2.4vw,36px);list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font:500 11px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--ivory);opacity:.86}
+.nav ul a:hover,.nav ul a[aria-current]{color:var(--gold-hi);opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 22px;border:1px solid var(--gold-hi);background:var(--gold-hi);color:var(--deep);font:500 11px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background-color .5s var(--ease),border-color .5s var(--ease),color .5s var(--ease)}
+.btn:hover{background:var(--champagne);border-color:var(--champagne)}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.line:hover{background:rgba(52,63,39,.06)}
+@media (max-width:760px){.nav ul{display:none}.nav img{height:34px}.nav .btn{min-height:40px;padding:0 14px;font-size:10px;letter-spacing:.2em}}
+
+/* Hero */
+.hero{background:radial-gradient(120% 100% at 80% 0%,var(--grove),var(--olive) 55%,var(--deep));color:var(--ivory);position:relative;overflow:hidden}
+.hero .wrap{padding-block:clamp(56px,9vw,120px) clamp(48px,7vw,88px);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:end}
+.hero .label{color:var(--gold-hi)}
+.hero h1{font-size:clamp(46px,6.4vw,96px);line-height:.98;margin-top:18px}
+.hero h1 em{font-style:italic;color:var(--gold-hi)}
+.hero p.lede{color:var(--ivory-2);max-width:46ch;margin-top:22px;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--hair-o)}
+.stats div{padding:18px 0 0;min-width:0}
+.stats b{display:block;font:500 clamp(34px,4vw,52px)/1 var(--serif);color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.stats span{font:500 10px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--ivory-3)}
+.arch-bg{position:absolute;right:-6%;top:-10%;width:min(520px,60vw);opacity:.07;pointer-events:none}
+@media (max-width:860px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* Filters */
+.filters{position:sticky;top:72px;z-index:30;background:rgba(245,240,227,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--hair-i)}
+.filters .wrap{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;padding-block:16px}
+.search{flex:1 1 240px;min-width:0;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--hair-i);padding:6px 0}
+.search svg{width:18px;height:18px;flex:none;stroke:var(--gold-lo);fill:none;stroke-width:1.5}
+.search input{flex:1;min-width:0;border:0;background:transparent;font:400 16px var(--sans);color:var(--ink);outline:none}
+.search input::placeholder{color:var(--ink-3)}
+select.f{appearance:none;-webkit-appearance:none;border:1px solid var(--hair-i);background:var(--paper-2) linear-gradient(45deg,transparent 50%,var(--gold-lo) 50%) right 12px center/6px 6px no-repeat;padding:10px 32px 10px 14px;font:500 12px/1 var(--sans);letter-spacing:.08em;color:var(--ink);border-radius:0;cursor:pointer;max-width:100%}
+.count{margin-left:auto;font-size:13px;color:var(--ink-3);white-space:nowrap}
+.reset{background:none;border:0;padding:6px 0;font:500 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lo);cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:760px){.filters{position:static}.filters .wrap{gap:10px}select.f{flex:1 1 calc(50% - 5px)}.count{margin-left:0;width:100%}}
+
+/* Grid */
+.list{padding-block:clamp(40px,5vw,72px) clamp(72px,8vw,120px)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(32px,3.4vw,52px) clamp(20px,2.4vw,36px)}
+@media (max-width:1060px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.grid{grid-template-columns:minmax(0,1fr)}}
+.card{display:flex;flex-direction:column;min-width:0;background:var(--paper-2);border:1px solid var(--hair-i);transition:box-shadow .6s var(--ease),transform .6s var(--ease)}
+.card:hover{box-shadow:0 18px 44px rgba(52,63,39,.12);transform:translateY(-2px)}
+.photo{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(160deg,var(--grove),var(--deep));cursor:pointer;border:0;padding:0;width:100%;display:block}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.4s var(--ease)}
+.card:hover .photo img{transform:scale(1.04)}
+.photo .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--gold-hi)}
+.photo .ph svg{width:64px;opacity:.5}
+.photo .tag{position:absolute;left:14px;top:14px;background:rgba(42,51,31,.86);color:var(--ivory);font:500 10px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;padding:8px 10px}
+.photo .tag.ready{background:var(--gold-hi);color:var(--deep)}
+.photo .n{position:absolute;right:14px;bottom:14px;background:rgba(42,51,31,.8);color:var(--ivory);font:500 11px/1 var(--sans);letter-spacing:.1em;padding:7px 10px;display:flex;gap:6px;align-items:center}
+.photo .n svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.5}
+.body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.body .label{font-size:10px}
+.body h3{font-size:clamp(24px,2vw,28px);line-height:1.12}
+.specs{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.specs span{display:inline-flex;align-items:center;gap:7px}
+.specs svg{width:18px;height:18px;fill:none;stroke:var(--gold-lo);stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.view{font-size:13.5px;color:var(--ink-3)}
+.foot{margin-top:auto;padding-top:16px;border-top:1px solid var(--hair-i);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.foot .por{font:italic 500 20px/1 var(--serif);color:var(--gold-lo)}
+.foot .btn{min-height:42px;padding:0 16px;font-size:10px;letter-spacing:.22em}
+.empty{grid-column:1/-1;text-align:center;padding:60px 0;color:var(--ink-2)}
+.more{display:flex;justify-content:center;margin-top:48px}
+
+/* Lightbox */
+dialog.lb{width:min(1100px,calc(100vw - 24px));max-height:calc(100svh - 24px);padding:0;border:1px solid var(--hair-o);background:var(--deep);color:var(--ivory);overflow:hidden}
+dialog.lb::backdrop{background:rgba(20,26,14,.86)}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 18px;border-bottom:1px solid rgba(212,180,106,.2)}
+.lb-top h3{font-size:clamp(20px,2.4vw,28px)}
+.lb-top small{display:block;font:500 10px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-hi)}
+.x{background:none;border:1px solid var(--hair-o);color:var(--ivory);width:42px;height:42px;cursor:pointer;font-size:20px;line-height:1;flex:none}
+dialog.lb[open]{display:flex;flex-direction:column}
+.stage{position:relative;background:#1e2516;display:grid;place-items:center;height:min(68svh,640px);flex:0 1 auto;min-height:180px}
+.stage img{min-height:0}
+.stage img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.nav-b{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border:1px solid var(--hair-o);background:rgba(42,51,31,.7);color:var(--ivory);font-size:22px;cursor:pointer}
+.nav-b.p{left:12px}.nav-b.n{right:12px}
+.lb-foot .ct{font:500 12px/1 var(--sans);letter-spacing:.2em;color:var(--gold-hi);margin-right:16px;font-variant-numeric:tabular-nums}
+.lb-foot{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;padding:14px 18px;border-top:1px solid rgba(212,180,106,.2);font-size:14px;color:var(--ivory-2)}
+
+/* Notice + footer */
+.notice{background:var(--paper);border-top:1px solid var(--hair-i)}
+.notice .wrap{padding-block:36px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center}
+.notice p{font-size:13.5px;color:var(--ink-2);max-width:90ch}
+footer{background:var(--olive);color:var(--ivory-2);font-size:13px}
+footer .wrap{padding-block:28px calc(28px + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+footer a{color:var(--gold-hi)}
+@media (max-width:760px){.notice .wrap{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="/estate/" aria-label="Palm &amp; Pearls, back to home"><img src="/assets/logo.svg" alt="Palm &amp; Pearls"></a>
+    <ul>
+      <li><a href="/estate/">Home</a></li>
+      <li><a href="/estate/inventory/" aria-current="page">Inventory</a></li>
+      <li><a href="/estate/#markets">Dubai &amp; India</a></li>
+      <li><a href="/motors/">Motors</a></li>
+    </ul>
+    <a class="btn" id="hdrWa" href="#" target="_blank" rel="noopener">Book a viewing</a>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="arch-bg" viewBox="0 0 200 250" aria-hidden="true"><path fill="none" stroke="#D4B46A" stroke-width="2" d="M14,244 V112 C14,62 62,32 100,8 C138,32 186,62 186,112 V244 Z"/><path fill="none" stroke="#D4B46A" stroke-width="1" d="M21,237 V113 C21,67 66,39 100,16.5 C134,39 179,67 179,113 V237 Z"/></svg>
+  <div class="wrap">
+    <div>
+      <p class="label">The Palm &amp; Pearls inventory</p>
+      <h1>Residences, <em>selected</em> for lasting value.</h1>
+      <p class="lede">A curated portfolio across Dubai, from ready homes to off-plan launches by the city's leading developers. Prices, payment plans and floor plans are shared privately on request.</p>
+    </div>
+    <div class="stats" aria-live="polite">
+      <div><b id="sTotal">–</b><span>Residences</span></div>
+      <div><b id="sAreas">–</b><span>Communities</span></div>
+      <div><b id="sReady">–</b><span>Ready now</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="filters" aria-label="Filter inventory">
+  <div class="wrap">
+    <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="Search project, community or developer" aria-label="Search"></label>
+    <select class="f" id="fArea" aria-label="Community"><option value="">All communities</option></select>
+    <select class="f" id="fType" aria-label="Property type"><option value="">All types</option></select>
+    <select class="f" id="fBeds" aria-label="Bedrooms"><option value="">Any bedrooms</option><option value="0">Studio</option><option value="1">1 bedroom</option><option value="2">2 bedrooms</option><option value="3">3 bedrooms</option><option value="4">4 bedrooms</option><option value="5">5+ bedrooms</option></select>
+    <select class="f" id="fStatus" aria-label="Status"><option value="">Ready &amp; off-plan</option><option value="ready">Ready</option><option value="offplan">Off-plan</option></select>
+    <button class="reset" id="reset" type="button">Clear</button>
+    <span class="count" id="count"></span>
+  </div>
+</section>
+
+<main class="list">
+  <div class="wrap">
+    <div class="grid" id="grid"><p class="empty">Loading the inventory…</p></div>
+    <div class="more"><button class="btn line" id="more" type="button" hidden>Show more residences</button></div>
+  </div>
+</main>
+
+<dialog class="lb" id="lb" aria-labelledby="lbTitle">
+  <div class="lb-top"><div><small id="lbArea"></small><h3 id="lbTitle"></h3></div><button class="x" id="lbClose" type="button" aria-label="Close">×</button></div>
+  <div class="stage"><img id="lbImg" alt="" referrerpolicy="no-referrer"><button class="nav-b p" id="lbPrev" type="button" aria-label="Previous photo">‹</button><button class="nav-b n" id="lbNext" type="button" aria-label="Next photo">›</button></div>
+  <div class="lb-foot"><span><b id="lbCount" class="ct"></b><span id="lbSpecs"></span></span><a class="btn" id="lbWa" href="#" target="_blank" rel="noopener">Request details</a></div>
+</dialog>
+
+<section class="notice">
+  <div class="wrap">
+    <p>Listings are indicative and subject to availability. Prices, payment plans, permit details and floor plans are confirmed privately before any viewing. Images are illustrative and may show the development, show units or similar residences.</p>
+    <a class="btn line" id="noteWa" href="#" target="_blank" rel="noopener">Ask about a residence</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Palm &amp; Pearls · Dubai · Mumbai · Navi Mumbai</span>
+    <span><a href="mailto:info@palmnpearls.com">info@palmnpearls.com</a> · <a href="tel:+971506826921">+971 50 682 6921</a> · <a href="tel:+918976780876">+91 89767 80876</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const WHATSAPP='971506826921';
+  const PAGE=24;
+  const $=id=>document.getElementById(id);
+  const UPPER=new Set(['DLRC','JVC','JLT','JBR','MBR','DIP','II','III','IV','DAMAC','JVT','DSO','DIFC','FCR','BUA','CEO','UAE','V1TER']);
+  const tc=s=>(s||'').toLowerCase().replace(/[a-z0-9’'&.]+/g,w=>UPPER.has(w.toUpperCase())?w.toUpperCase():w.charAt(0).toUpperCase()+w.slice(1)).replace(/\s*-\s*/g,' · ').replace(/\bAnd\b/g,'and').replace(/\bOf\b/g,'of');
+  const wa=t=>'https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(t);
+  const isReady=h=>/ready/i.test(h||'');
+  const bedsNum=b=>{b=(b||'').toUpperCase();if(/STUDIO/.test(b)&&!/\d/.test(b))return 0;const m=b.match(/(\d+)/);return m?+m[1]:null};
+  const bedsLabel=b=>{if(!b)return'';const n=bedsNum(b);let s=n===0?'Studio':n?n+' bed'+(n>1?'s':''):tc(b);if(/MAID/i.test(b))s+=' + maid';if(/STUDY/i.test(b))s+=' + study';return s};
+  const sizeLabel=s=>{if(!s)return'';const p=s.match(/([\d,]+)\s*PLOT/i),b=s.match(/([\d,]+)\s*BUA/i);if(b)return Number(b[1].replace(/,/g,'')).toLocaleString('en-US')+' sq ft'+(p?' · plot '+Number(p[1].replace(/,/g,'')).toLocaleString('en-US'):'');const n=Number(s.replace(/[^\d.]/g,''));return n?n.toLocaleString('en-US')+' sq ft':''};
+  const status=h=>isReady(h)?'Ready':(h?'Handover '+tc(h).replace(/·/g,'-'):'Off-plan');
+  const I={bed:'<svg viewBox="0 0 24 24"><path d="M3 18v-7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7M3 14h18M7 9V7h4v2"/></svg>',size:'<svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h5M15 4v5"/></svg>',type:'<svg viewBox="0 0 24 24"><path d="M5 20V8l7-4 7 4v12M9 20v-6h6v6"/></svg>',cam:'<svg viewBox="0 0 24 24"><path d="M4 8h3l2-2h6l2 2h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>'};
+  const mark='<svg viewBox="0 0 200 250" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" d="M14,244 V112 C14,62 62,32 100,8 C138,32 186,62 186,112 V244 Z"/><circle cx="100" cy="132" r="18" fill="currentColor"/></svg>';
+  const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  let ALL=[],shown=PAGE,cur=null,idx=0;
+  $('yr').textContent=new Date().getFullYear();
+  const gen=wa('Hello Palm & Pearls, I would like to book a private viewing. Please share available residences.');
+  $('hdrWa').href=gen;$('noteWa').href=gen;
+
+  function enquiry(r){return wa('Hello Palm & Pearls, please share price, payment plan and availability for: '+r.name+(r.beds?' · '+r.bedsL:'')+(r.size?' · '+r.sizeL:'')+' · '+r.areaL+' (ref '+r.ref+').')}
+
+  fetch('listings.json').then(r=>r.json()).then(data=>{
+    ALL=data.filter(d=>d.ok&&d.images&&d.images.length).map((d,i)=>{
+      const name=tc(d.project)||tc(d.title);
+      // The first images are usually location maps and master plans: open on a render, keep the maps at the end
+      const n=d.images.length,start=n>=5?3:n>=3?2:0;
+      const images=d.images.slice(start).concat(d.images.slice(0,start));
+      const typeL=tc((d.type||'').replace(/towmhouse/i,'Townhouse'))||'Residence';
+      return Object.assign({},d,{images,ref:'PP-'+String(i+1).padStart(3,'0'),name,areaL:tc(d.area),typeL,bedsL:bedsLabel(d.beds),bn:bedsNum(d.beds),sizeL:sizeLabel(d.size),ready:isReady(d.handover),st:status(d.handover),devL:tc(d.developer),viewsL:tc((d.views||'').replace(/^[\s—–-]+$/,'')).replace(/,\s*/g,' · ')});
+    });
+    const areas=[...new Set(ALL.map(r=>r.areaL).filter(Boolean))].sort();
+    const types=[...new Set(ALL.map(r=>r.typeL).filter(Boolean))].sort();
+    areas.forEach(a=>$('fArea').add(new Option(a,a)));
+    types.forEach(t=>$('fType').add(new Option(t,t)));
+    $('sTotal').textContent=ALL.length;$('sAreas').textContent=areas.length;$('sReady').textContent=ALL.filter(r=>r.ready).length;
+    render();
+  }).catch(()=>{$('grid').innerHTML='<p class="empty">The inventory could not be loaded. Please refresh, or message us on WhatsApp.</p>'});
+
+  function filtered(){
+    const q=$('q').value.trim().toLowerCase(),a=$('fArea').value,t=$('fType').value,b=$('fBeds').value,s=$('fStatus').value;
+    return ALL.filter(r=>(!q||[r.name,r.areaL,r.devL,r.viewsL,r.typeL].join(' ').toLowerCase().includes(q))&&(!a||r.areaL===a)&&(!t||r.typeL===t)&&(b===''||(b==='5'?r.bn>=5:r.bn===+b))&&(!s||(s==='ready')===r.ready));
+  }
+  function card(r){
+    return `<article class="card">
+      <button class="photo" type="button" data-ref="${r.ref}" aria-label="View ${r.images.length} photos of ${esc(r.name)}">
+        <span class="ph">${mark}</span>
+        <img src="${esc(r.cover?'covers/'+r.cover:r.images[0])}" alt="${esc(r.name)}, ${esc(r.areaL)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+        <span class="tag${r.ready?' ready':''}">${esc(r.st)}</span>
+        <span class="n">${I.cam}${r.images.length}</span>
+      </button>
+      <div class="body">
+        <p class="label">${esc(r.areaL)}${r.devL?' · '+esc(r.devL):''}</p>
+        <h3>${esc(r.name)}</h3>
+        <div class="specs">${r.bedsL?`<span>${I.bed}${esc(r.bedsL)}</span>`:''}${r.sizeL?`<span>${I.size}${esc(r.sizeL)}</span>`:''}<span>${I.type}${esc(r.typeL)}</span></div>
+        ${r.viewsL?`<p class="view">Views: ${esc(r.viewsL)}${r.floor?' · Floor '+esc(r.floor):''}</p>`:''}
+        <div class="foot"><span class="por">Price on request</span><a class="btn" href="${enquiry(r)}" target="_blank" rel="noopener">Request details</a></div>
+      </div>
+    </article>`;
+  }
+  function render(){
+    const list=filtered();
+    $('count').textContent=list.length+' of '+ALL.length+' residences';
+    $('grid').innerHTML=list.length?list.slice(0,shown).map(card).join(''):'<p class="empty">No residences match these filters. <button class="reset" type="button" onclick="document.getElementById(\'reset\').click()">Clear filters</button></p>';
+    $('more').hidden=list.length<=shown;
+  }
+  ['q','fArea','fType','fBeds','fStatus'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',()=>{shown=PAGE;render()}));
+  $('reset').addEventListener('click',()=>{$('q').value='';['fArea','fType','fBeds','fStatus'].forEach(id=>$(id).value='');shown=PAGE;render()});
+  $('more').addEventListener('click',()=>{shown+=PAGE;render()});
+
+  // Gallery
+  const lb=$('lb');
+  function show(i){
+    idx=(i+cur.images.length)%cur.images.length;
+    $('lbImg').src=cur.images[idx];$('lbImg').alt=cur.name+', photo '+(idx+1)+' of '+cur.images.length;
+    $('lbCount').textContent=(idx+1)+' / '+cur.images.length;
+    // Source photos are large: load one at a time and warm up only the next one
+    if(cur.images.length>1){const p=new Image();p.referrerPolicy='no-referrer';p.src=cur.images[(idx+1)%cur.images.length]}
+  }
+  $('grid').addEventListener('click',e=>{
+    const b=e.target.closest('.photo');if(!b)return;
+    cur=ALL.find(r=>r.ref===b.dataset.ref);if(!cur)return;
+    $('lbTitle').textContent=cur.name;$('lbArea').textContent=cur.areaL+' · '+cur.st;
+    $('lbSpecs').textContent=[cur.bedsL,cur.sizeL,cur.typeL,cur.viewsL&&'Views: '+cur.viewsL].filter(Boolean).join(' · ');
+    $('lbWa').href=enquiry(cur);
+    lb.showModal();show(0);
+  });
+  $('lbImg').addEventListener('error',()=>{if(cur&&cur.images.length>1){cur.images.splice(idx,1);show(idx)}});
+  $('lbPrev').addEventListener('click',()=>show(idx-1));$('lbNext').addEventListener('click',()=>show(idx+1));
+  $('lbClose').addEventListener('click',()=>lb.close());
+  lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
+  document.addEventListener('keydown',e=>{if(!lb.open)return;if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1)});
+})();
+</script>
+</body>
+</html>
